@@ -1,41 +1,55 @@
 <script setup lang="ts">
- import { Swiper, SwiperSlide } from 'swiper/vue';
- import { EffectCards } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { EffectCards } from 'swiper/modules';
 
- const modules = [EffectCards];
+const modules = [EffectCards];
 
 
 </script>
 
 <template>
-  <div class="tw-bg-red-400">
-    <p class="tw-text-center tw-font-serif tw-font-semibold tw-text-6xl">
-      hellos
-    </p>
-    <div class="tw-flex tw-justify-center tw-items-center" >
-    <swiper
-    :effect="'cards'"
-    :grabCursor="true"
-    :modules="modules"
-    class="mySwiper"
-  >
-    <swiper-slide>HELLO BABY KO</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
-  </swiper>
-  </div>
-  </div>
+  <div class="tw-bg-red-400 tw-py-52">
+    <div class="tw-p-10 lg:tw-p-20">
+      <p class="tw-text-center tw-font-serif tw-font-semibold tw-text-xl">
+        Welcome My <span>
+          <NuxtLink to="/eto">
+            Love.
+          </NuxtLink>
+        </span>
+        <span>
+          Erlyn Joyce Francisco Ramos
+        </span>
+      </p>
+    </div>
+    <div class="tw-flex tw-justify-center tw-items-center">
+      <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper">
+        <swiper-slide>HELLO BABY KO!!!!</swiper-slide>
 
+        <swiper-slide><img src="/img/hi.jpg" /></swiper-slide>
+        <swiper-slide class="tw-text-center">Hindi ko man afford yung tulips na flower ngayon. Pwede bang lipstulips nalng
+          muna? AHEHAEHEHAHEAHEH</swiper-slide>
+        <swiper-slide><img src="/img/cutie.jpg" /></swiper-slide>
+        <swiper-slide><img src="/img/heart.jpg" /></swiper-slide>
+        <swiper-slide><img src="/img/heart1.jpg" /></swiper-slide>
+        <swiper-slide>
+          <div class="tw-text-center tw-p-6"> HEHEHEHEHEHEHE I LOVE YOU SO MUCH BABY!!!
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="tw-text-center tw-p-6"> PINDOT MO YUNG LOVE NA WORD SA TAAS HEHEHE!!!
+          </div>
+        </swiper-slide>
+      </swiper>
+    </div>
+  </div>
 </template>
 
 
 
 <style scoped>
 .swiper {
-  width: 320px;
-  height: 320px;
+  width: 240px;
+  height: 240px;
 }
 
 .swiper-slide {
