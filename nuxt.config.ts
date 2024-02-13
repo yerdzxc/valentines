@@ -1,6 +1,10 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
+  ssr: false,
+  app: {
+    baseURL: '/valentines/'
+  },
   devtools: { enabled: false },
   build: {
     transpile: ['vuetify'],
