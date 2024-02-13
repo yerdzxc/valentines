@@ -38,6 +38,25 @@ yarn dev
 bun run dev
 ```
 
+## Github Pages
+
+Just push in the branch defined in ".github/workflows/build-and-deploy.yml"
+
+Or build and deploy locally
+
+Build the application for Github Pages:
+
+```bash
+# install gh-pages
+pnpm add -g gh-pages
+# pnpm
+pnpm run generate
+
+gh-pages --dotfiles -d .output/public 
+# or
+gh-pages --dotfiles -d dist
+```
+
 ## Production
 
 Build the application for production:
